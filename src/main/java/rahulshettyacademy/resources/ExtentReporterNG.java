@@ -5,8 +5,11 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentReporterNG {
 
+	String a="abc";
+	String b="abc";
 	
 	public static ExtentReports getReportObject()
+	
 	{
 		String path =System.getProperty("user.dir")+"//reports//index.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
@@ -19,6 +22,6 @@ public class ExtentReporterNG {
 		return extent;
 		
 		
-		
 	}
+	
 }
